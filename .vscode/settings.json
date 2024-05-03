@@ -1,0 +1,16 @@
+{
+    "sqltools.connections": [
+        {
+            "pgOptions": {
+                "ssl": {
+                    "rejectUnauthorized": true
+                }
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "driver": "PostgreSQL",
+            "connectString": "postgresql://todo_list_db_owner:BIL2wnHUfp4K@ep-super-grass-a57101yb.us-east-2.aws.neon.tech/todo_list_db?sslmode=require",
+            "name": "todo_list_db"
+        }
+    ]
+}
