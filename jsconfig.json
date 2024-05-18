@@ -1,9 +1,0 @@
-{
-  "compilerOptions": {
-    "paths": {
-      "@/*": ["./*"],
-      "@client/*": ["./app/(client)/*"],
-      "@server/*": ["./app/(server)/*"]
-    }
-  }
-}
