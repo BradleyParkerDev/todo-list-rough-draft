@@ -1,6 +1,9 @@
 import { drizzle } from 'drizzle-orm/neon-http';
 
 import { neon } from '@neondatabase/serverless';
+import * as schema from './schemas';
+
+
 import dotenv from 'dotenv';
 // Load environment variables from .env file
 dotenv.config();
@@ -10,7 +13,7 @@ if (!connectionString) {
 }
 const sql = neon(connectionString!);
 
-export const db = drizzle(sql);
+export const db = drizzle(sql, {schema, logger: true});
 
 
 
