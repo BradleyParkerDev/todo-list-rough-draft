@@ -9,7 +9,10 @@
     "lint": "next lint",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "tsx ./app/'(server)'/database/migrate.ts",
-    "db:push": "drizzle-kit push"
+    "db:push": "drizzle-kit push",
+    "db:register": "tsx ./app/'(server)'/database/actions/users/register.ts",
+    "db:deleteUser": "tsx ./app/'(server)'/database/actions/users/deleteUser.ts"
+
   },
   "dependencies": {
     "@neondatabase/serverless": "^0.9.3",
